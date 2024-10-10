@@ -3,14 +3,25 @@
 ## Project Overview
 This project performs sentiment analysis on tweets using the **Sentiment140** dataset. The dataset consists of 1.6 million tweets labeled with either positive or negative sentiment, which allows training a machine learning model to automatically detect sentiment in text data.
 
+---
+
+### Project Structure
+
+- **Sentiment_Analysis.ipynb**: The main notebook where the preprocessing, model training, and evaluation take place.
+- **Dataset**: The Sentiment140 dataset downloaded from Kaggle.
+- **strained_model.sav**: The saved logistic regression model.
+
+---
+
 ## Features
-- **Dataset**: Sentiment140 dataset from Kaggle
 - **Machine Learning Model**: Logistic Regression (for classification)
 - **Text Preprocessing**: 
   - Cleaning text (e.g., removing URLs, special characters)
   - Stopword removal
   - Stemming
 - **Model Evaluation**: Achieves 79.87% accuracy on training data and 77.66% on test data.
+
+---
 
 ### 1. Installing Kaggle Library and Fetching the Dataset
 
@@ -210,13 +221,20 @@ if prediction[0] == 0:
 else:
     print("Positive Tweet")
 ```
+
 ---
 
-### Project Structure
+### Future Prospects
 
-- **Sentiment_Analysis.ipynb**: The main notebook where the preprocessing, model training, and evaluation take place.
-- **Dataset**: The Sentiment140 dataset downloaded from Kaggle.
-- **strained_model.sav**: The saved logistic regression model.
+The current sentiment analysis model can be enhanced with the following approaches:
+
+- **Hyperparameter Tuning**: Improve performance by fine-tuning parameters like regularization strength, using Grid Search or Randomized Search.
+
+- **Trying Different Models**: Explore advanced models such as Random Forest, SVM, XGBoost, or deep learning models like LSTM and BERT for better accuracy.
+
+- **Model Comparison**: Compare the performance of different models using metrics like accuracy, precision, recall, and F1-score.
+
+- **Ensemble Methods**: Boost performance by combining models (e.g., voting classifiers or stacking).
 
 ---
 
