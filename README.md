@@ -23,6 +23,10 @@ This project performs sentiment analysis on tweets using the **Sentiment140** da
 
 ---
 
+### Note
+
+- **Kaggle**: To use the Kaggle API for loading the dataset, you must have a Kaggle account. Obtain your kaggle.json file from the API token section in your account settings. Once you have the file, place it in your workspace. This step is crucial if you want to fetch the dataset automatically via the Kaggle API, rather than downloading it manually.
+
 ### 1. Installing Kaggle Library and Fetching the Dataset
 
 To download the dataset using the Kaggle API:
